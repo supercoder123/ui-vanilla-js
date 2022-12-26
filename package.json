@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "deploy": "gh-pages -d dist",
-    "build": "vite build",
+    "build": "vite build --base=/vanilla-js-ui",
     "preview": "vite preview"
   },
   "devDependencies": {
