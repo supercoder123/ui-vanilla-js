@@ -1,0 +1,16 @@
+#app {
+    padding: 0;
+}
+body {
+  justify-content: center;
+  flex-direction: column;
+}
+span.star {
+    font-size: 34px;
+}
+span.star::before {
+    content: '☆';
+}
+span.star.active::before {
+    content: '★';
+}

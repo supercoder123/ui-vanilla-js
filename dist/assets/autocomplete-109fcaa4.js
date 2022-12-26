@@ -1,0 +1,1 @@
+import"./style-fac82e35.js";class t{constructor(e,o){this.inputElement=document.getElementById(e),this.inputElement.addEventListener("input",this.onInput)}onInput(e){console.log(e)}}new t("my-search",{highlight:!1,data:["a","b"],placeholder:"",minChar:3,debounce:0,loader:"",renderItem:()=>"",onItemClick:()=>{}});
