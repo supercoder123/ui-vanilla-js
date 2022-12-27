@@ -53,5 +53,3 @@ export class StarRating {
         return this.rating;
     }
 }
-
-// '☆' '★'

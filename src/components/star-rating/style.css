@@ -2,6 +2,15 @@
     padding: 0;
 }
 body {
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+}
+.card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+body {
   justify-content: center;
   flex-direction: column;
 }
@@ -10,7 +19,14 @@ span.star {
 }
 span.star::before {
     content: '☆';
+    transition: color 0.3s ease-out;
 }
 span.star.active::before {
     content: '★';
+    color: #ffae00;
+}
+#rating {
+    min-height: 24px;
+    margin: 10px 0;
+    text-align: center;
 }

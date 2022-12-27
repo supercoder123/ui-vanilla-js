@@ -8,6 +8,7 @@ const outDir = resolve(__dirname, 'dist');
 
 export default defineConfig({
   root,
+  base: '/vanilla-js-ui/',
   build: {
     outDir,
     emptyOutDir: true,
