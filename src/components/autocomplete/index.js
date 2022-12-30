@@ -5,7 +5,7 @@ import '../../styles.css';
 fetch('https://jsonplaceholder.typicode.com/users').then(res => res.json()).then((res) => {
     const autocomplete2 = new AutoComplete('my-search-2', {
         data: res,
-        placeholder: 'Async search by name',
+        placeholder: 'Search by name',
         matches: (data, searchTerm) => {
             return data.filter(data => data.name.toLowerCase().includes(searchTerm));
         },
@@ -26,7 +26,7 @@ fetch('https://jsonplaceholder.typicode.com/users').then(res => res.json()).then
 
 const autocomplete = new AutoComplete('my-search', {
     data: ['Apple', 'Mango', 'Banana', 'Tomato', 'Orange'],
-    placeholder: 'Sync search',
+    placeholder: 'Search Fruits',
     matches: (data, searchTerm) => {
         return data.filter(data => data.toLowerCase().includes(searchTerm));
     },
