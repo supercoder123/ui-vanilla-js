@@ -1,6 +1,6 @@
 import { StarRating } from './StarRating';
-import '../../style.css';
-import './style.css';
+import '../../styles.css';
+import './styles.css';
 
 const rating = new StarRating('app', {
     numberOfStars: 15,

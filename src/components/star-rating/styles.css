@@ -20,6 +20,7 @@ span.star {
 span.star::before {
     content: '☆';
     transition: color 0.3s ease-out;
+    cursor: pointer;
 }
 span.star.active::before {
     content: '★';
