@@ -16,7 +16,8 @@ export default defineConfig({
       input: {
         main: resolve(root, 'index.html'),
         autocomplete: resolve(root, `${baseDir}/autocomplete/index.html`),
-        "star-rating": resolve(root, `${baseDir}/star-rating/index.html`)
+        "star-rating": resolve(root, `${baseDir}/star-rating/index.html`),
+        "modal": resolve(root, `${baseDir}/modal/index.html`)
       }
     },
   },
