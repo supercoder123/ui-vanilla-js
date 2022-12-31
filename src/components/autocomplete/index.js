@@ -1,6 +1,6 @@
 import { AutoComplete } from './AutoComplete';
-import './styles.css';
 import '../../styles.css';
+import './styles.css';
 
 fetch('https://jsonplaceholder.typicode.com/users').then(res => res.json()).then((res) => {
     const autocomplete2 = new AutoComplete('my-search-2', {
