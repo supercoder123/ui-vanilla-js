@@ -31,7 +31,9 @@ body {
     padding: 10px;
     border-bottom: 1px solid #eee;
 }
-.autocomplete-dropdown li:hover {
+
+.autocomplete-dropdown li:hover,
+.autocomplete-dropdown li[item-selected="true"] {
     background-color: #eeeeee;
     cursor: pointer;
 }

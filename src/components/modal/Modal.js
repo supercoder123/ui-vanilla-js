@@ -1,15 +1,24 @@
 export class Modal {
     constructor(id) {
         this.modal = document.getElementById(id);
+        this.modal.dataset.modalHidden = "true";
+        this.addListeners();
+    }
+
+    addListeners() {
         this.modal.addEventListener('click', (e) => {
             if (e.target.parentElement.classList.contains('modal-container')) {
                 this.close();
             }
         });
-        this.modal.dataset.modalHidden = "true";
         this.modal.querySelectorAll('[data-close]').forEach(element => {
             element.addEventListener('click', () => this.close());
         });
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' || e.keyCode === 27) {
+                this.close();
+            }
+        })
     }
 
     open() {
