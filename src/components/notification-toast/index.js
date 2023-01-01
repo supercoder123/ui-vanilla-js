@@ -2,18 +2,20 @@ import { Notification } from './Notification';
 import '../../styles.css';
 import './styles.css';
 
-const toast = new Notification({
-    position: 'bottom-right'
-});
+const toast = new Notification({});
+
 
 document.getElementById('success-trigger').addEventListener('click', function() {
-    toast.success('Success: Duration: 3000, Inserted at end', { insertAtEnd: true });
+    const duration = +document.querySelector('input[type="number').value;
+    toast.success(`Success: Duration: ${duration}`, { duration });
 });
 
 document.getElementById('error-trigger').addEventListener('click', function() {
-    toast.error('Error: Duration: 2000, Inserted at start ', { duration: 2000, insertAtEnd: false });
+    const duration = +document.querySelector('input[type="number').value;
+    toast.error(`Error: Duration: ${duration}`, { duration });
 });
 
 document.getElementById('info-trigger').addEventListener('click', function() {
-    toast.info('Info: Duration: 1000, Inserted at end', { duration: 1000, insertAtEnd: true });
+    const duration = +document.querySelector('input[type="number').value;
+    toast.info(`Info: Duration: ${duration}`, { duration });
 });

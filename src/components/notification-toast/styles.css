@@ -10,6 +10,21 @@ body {
     border-radius: 5px;
     border: 1px solid;
     cursor: pointer;
+    margin: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+form input {
+    padding: 10px;
+    border-radius: 2px;
+    border: none;
+}
+form label {
+    font-size: 18px;
+    color: white;
 }
 
 .btn:active {
