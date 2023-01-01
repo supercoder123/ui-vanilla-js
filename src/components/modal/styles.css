@@ -37,6 +37,7 @@ body {
     max-width: 500px;
     max-height: 500px;
     padding: 20px;
+    margin: 20px;
 }
 .modal-overlay .modal-content .close{
     display: block;
