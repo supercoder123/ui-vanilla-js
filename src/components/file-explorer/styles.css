@@ -9,7 +9,7 @@ body {
     border-radius: 8px;
     padding: 8px;
     list-style: none;
-    min-width: 500px;
+    min-width: 300px;
 }
 
 .explorer__item, .explorer__item-expand {
