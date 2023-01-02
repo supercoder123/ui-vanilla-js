@@ -27,7 +27,7 @@ body {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: 1fr;
   grid-auto-flow: row;
   max-width: 800px;
   gap: 10px;
