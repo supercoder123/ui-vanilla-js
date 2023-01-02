@@ -7,7 +7,7 @@ fetch('https://jsonplaceholder.typicode.com/users').then(res => res.json()).then
         data: res,
         placeholder: 'Search by name',
         matches: (data, searchTerm) => {
-            return data.filter(data => data.name.toLowerCase().includes(searchTerm));
+            return data.filter(data => data.name.toLowerCase().includes(searchTerm.toLowerCase()));
         },
         renderItem: (data) => {
             return `
@@ -28,7 +28,7 @@ const autocomplete = new AutoComplete('my-search', {
     data: ['Apple', 'Mango', 'Banana', 'Tomato', 'Orange'],
     placeholder: 'Search Fruits',
     matches: (data, searchTerm) => {
-        return data.filter(data => data.toLowerCase().includes(searchTerm));
+        return data.filter(data => data.toLowerCase().includes(searchTerm.toLowerCase()));
     },
     renderItem: (data) => {
         return `

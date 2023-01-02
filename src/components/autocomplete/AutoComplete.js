@@ -33,15 +33,16 @@ export class AutoComplete {
                     : this.filteredListElements[0];
                 this.currentSelectedListElement.previousElementSibling?.removeAttribute('item-selected');
                 this.currentSelectedListElement.setAttribute('item-selected', 'true');
+                this.currentSelectedListElement.scrollIntoView({ block: "end" });
             }
 
             if (e.key === 'ArrowUp' || e.keyCode === 38) {
                 this.currentSelectedListElement.removeAttribute('item-selected');
                 this.currentSelectedListElement = this.currentSelectedListElement.previousElementSibling || this.currentSelectedListElement;
                 this.currentSelectedListElement.setAttribute('item-selected', 'true');
+                this.currentSelectedListElement.scrollIntoView({ block: "end" });
             }
 
-            this.currentSelectedListElement.scrollIntoView({ block: "end" });
             
             if (e.key === 'Enter' || e.keyCode === 13) {
                 this.onItemClick(this.filteredList[this.currentSelectedListElement.dataset.itemId], this.searchTerm);
