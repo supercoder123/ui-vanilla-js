@@ -62,6 +62,12 @@ export const data = {
             },
           ],
         },
+        {
+          id: 12,
+          name: "index.ts",
+          isFolder: false,
+          items: [],
+        }
       ],
     },
     {
