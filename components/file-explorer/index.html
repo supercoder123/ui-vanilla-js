@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>File Explorer</title>
-    <script type="module" crossorigin src="/vanilla-js-ui/assets/file-explorer-8d31c374.js"></script>
+    <script type="module" crossorigin src="/vanilla-js-ui/assets/file-explorer-9776e3b0.js"></script>
     <link rel="modulepreload" crossorigin href="/vanilla-js-ui/assets/styles-fac82e35.js">
     <link rel="stylesheet" href="/vanilla-js-ui/assets/styles-631f0865.css">
-    <link rel="stylesheet" href="/vanilla-js-ui/assets/index-04e7e5de.css">
+    <link rel="stylesheet" href="/vanilla-js-ui/assets/index-485d929e.css">
   </head>
   <body>
     <a style="position: absolute;left: 30px; top: 30px;border-radius:50%;background-color:azure;height: 40px;width:40px;display:flex;justify-content: center;" href="/vanilla-js-ui/">
@@ -75,13 +75,29 @@
       <li class="explorer__item explorer__item--file"></li>
     </template>
 
+    <template id="add-file-template">
+      <li class="explorer__item explorer__item--file"><input class="add-file-input" type="text"/></li>
+    </template>
+
     <template id="folder-template">
       <ul class="explorer__item-expand">
         <li class="explorer__item">
           <span class="explorer__item--folder"></span>
           <span class="explorer__item-options">
-            <button class="explorer__item-options-buttons"><img src="./assets/add-folder.svg" alt="Add folder"></button>
-            <button class="explorer__item-options-buttons"><img src="./assets/add-file.svg" alt="Add file"></button>
+            <button class="explorer__item-options-buttons explorer__item-add-folder"><img src="./assets/add-folder.svg" alt="Add folder"></button>
+            <button class="explorer__item-options-buttons explorer__item-add-file"><img src="./assets/add-file.svg" alt="Add file"></button>
+          </span>
+        </li>
+      </ul>
+    </template>
+
+    <template id="add-folder-template">
+      <ul class="explorer__item-expand">
+        <li class="explorer__item">
+          <span class="explorer__item--folder"><input class="add-folder-input" type="text"/></span>
+          <span class="explorer__item-options">
+            <button class="explorer__item-options-buttons explorer__item-add-folder"><img src="./assets/add-folder.svg" alt="Add folder"></button>
+            <button class="explorer__item-options-buttons explorer__item-add-file"><img src="./assets/add-file.svg" alt="Add file"></button>
           </span>
         </li>
       </ul>
