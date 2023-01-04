@@ -88,17 +88,18 @@ export class FileExplorer {
     }
 
     getFile(id, files) {
-        let result = null;
         for (let i=0; i<files.length; i++) {
             if (files[i].id === id) {
                 return files[i];
             }
 
             if (files[i].isFolder) {
-                result = this.getFile(id, files[i].items);
+                const result = this.getFile(id, files[i].items);;
+                if (result) {
+                    return result;
+                }
             }
         }
-        return result;
     }
 
     addFile(id, files, fileName, newId) {

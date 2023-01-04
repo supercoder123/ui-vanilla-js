@@ -76,5 +76,18 @@ export const data = {
       isFolder: false,
       items: [],
     },
+    {
+      id: 63,
+      name: "public",
+      isFolder: true,
+      items: [
+        {
+          id: 20,
+          name: "index.html",
+          isFolder: false,
+          items: [],
+        },
+      ],
+    },
   ],
 };

@@ -55,7 +55,7 @@ body {
 
 .explorer__item--file:before {
     content: '';
-    background: url('./assets/file.svg');
+    background: url('/images/file.svg');
     background-repeat: no-repeat;
     display: inline-block;
     background-size:100%;
@@ -90,7 +90,7 @@ body {
 }
 .explorer__item--folder:before {
     content: '';
-    background: url('./assets/open-folder.svg');
+    background: url('/images/open-folder.svg');
     background-repeat: no-repeat;
     display: inline-block;
     background-size:100%;
@@ -101,7 +101,7 @@ body {
 }
 
 .folder-close.explorer__item--folder:before {
-    background: url('./assets/close-folder.svg');
+    background: url('/images/close-folder.svg');
     background-repeat: no-repeat;
     background-size:100%;
     height: 24px;
